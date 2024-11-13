@@ -1,0 +1,94 @@
+main {
+  display: flex;
+  flex-flow: column nowrap;
+  max-width: 800px;
+  margin: auto;
+  height: calc(100vh - 20px);
+  gap: 10px;
+  padding: 10px;
+  background-color: #f5f2ff;
+  font-family: sans-serif;
+}
+
+header,
+.hero,
+.main-content,
+.sidebar,
+.extra-content,
+.related-images,
+.related-posts,
+footer {
+  padding: 20px;
+  text-align: center;
+  color: #fff;
+  font-size: 2rem;
+}
+
+header {
+  max-height: 100px;
+  background-color: #9ad1e0;
+}
+
+footer {
+  max-height: 100px;
+  background-color: #f4a261;
+}
+
+.container {
+  flex: 5 0 0;
+  display: flex;
+  flex-flow: row wrap;
+  height: 100%;
+  gap: 10px;
+}
+
+aside {
+  flex: 1 0 0;
+  display: flex;
+  flex-flow: column wrap;
+  gap: 10px;
+}
+
+.hero {
+  flex: 1 0 0;
+  background-color: #c1a1d3;
+}
+
+.sidebar {
+  flex: 2 0 0;
+  background-color: #a7c87c;
+}
+
+.content {
+  flex: 2 0 0;
+  display: flex;
+  flex-flow: column wrap;
+  gap: 10px;
+}
+
+.main-content {
+  flex: 2 0 0;
+  background-color: #f7c873;
+}
+
+.extra-content {
+  flex: 1 0 0;
+  background-color: #a8a8a8;
+}
+
+.related {
+  flex: 1 0 0;
+  display: flex;
+  flex-wrap: row wrap;
+  gap: 10px;
+}
+
+.related-images {
+  flex: 3 0 0;
+  background-color: #68b080;
+}
+
+.related-posts {
+  flex: 1 0 0;
+  background-color: #ffb6c1;
+}

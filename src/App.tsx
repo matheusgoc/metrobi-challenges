@@ -1,24 +1,29 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import "./app.css";
+import Question1 from "./questions/question1";
+import Question2 from "./questions/question2";
+import Question3 from "./questions/question3";
+import Question4 from "./questions/question4";
+import Question5 from "./questions/question5";
+import Question6 from "./questions/question6";
+import Question7 from "./questions/question7";
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div
+      style={{
+        padding: "20px 20px 100px 20px",
+        maxWidth: "800px",
+        margin: "auto",
+      }}
+    >
+      <h1 style={{ textAlign: "center" }}>Metrobi Challenge Questions</h1>
+      <Question1 />
+      <Question2 />
+      <Question3 />
+      <Question4 />
+      <Question5 />
+      <Question6 />
+      <Question7 />
     </div>
   );
 }
