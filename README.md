@@ -1,6 +1,6 @@
 # Metrobi Challenge Questions
 
-This repo provides the answers for the technical questions requested by [Metrobi](metrobi.com) in the interview process.
+This repo provides the answers for the technical questions requested by [Metrobi](https://metrobi.com) in the interview process.
 
 ## Directions
 
@@ -21,19 +21,22 @@ $ bun run test
 
 ### Questions Code Structure
 
-- [`questions` / `questions.ts`](questions/questions.ts)
-  function code for each question except queston 3 and 6
+- [`src` / `questions` / `questions.ts`](src/questions/questions.ts)
+  functions code for each question except queston 3 and 6
 
-- [`questions` / `questions.test.ts`](questions/question.test.ts)
+- [`src` / `questions` / `questions.test.ts`](src/questions/questions.test.ts)
   unit tests form some questions
 
-- [`questions` / `questions3.ts`](questions/questions3.ts)
-  code for question 3
+- [`src` / `questions` / `question3.tsx`](src/questions/question3.tsx)
+  React component for question 3
 
-- [`questions` / `questions3.ts`](questions/questions6.ts)
-  code for question 6
+- [`src` / `questions` / `question3.css`](src/questions/question3.css)
+  CSS for question 3
 
-- [`questions` / `questions{question number}`](questions)
+- [`src` / `questions` / `question6.tsx`](src/questions/question6.tsx)
+  React component for question 6
+
+- [`src` / `questions` / `question{question number}.tsx`](src/questions)
   React component for demo each question
 
 ## Questions Resolution
@@ -91,6 +94,8 @@ questionTwo(["a", "b", "c", "d"]);
 Write the necessary React code for generating the below figure (using flex).
 
 **Sandbox:** https://codesandbox.io/p/sandbox/metrobi-question-three-kf86hf
+
+![Screenshot 2024-11-12 at 10 44 35 PM](https://github.com/user-attachments/assets/e31c7b20-750d-43d7-be50-9558355affdb)
 
 ```typescript
 import { FC } from "react";
@@ -276,6 +281,8 @@ console.log(questionFive(100)); // 14
 Write the code that animates “Zeno's Paradox of Achilles and the Tortoise” on an interface(we would like to see the paradox demonstrated).
 
 **Sandbox**: https://codesandbox.io/p/sandbox/metrobi-question-six-hl6xxp
+
+https://github.com/user-attachments/assets/29ecce75-36cd-4197-947b-40d1565b8429
 
 ```typescript
 import React, { useState, useEffect } from "react";
